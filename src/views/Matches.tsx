@@ -43,7 +43,7 @@ export const Matches: FC = () => {
         <div className="fixed w-full h-full z-10 top-0 left-0 bg-[rgba(0,0,0,0.3)]">
           <img
             className="absolute top-1/2 left-1/2 w-1/12 h-1/12 transform -translate-x-1/2 -translate-y-1/2 z-50 animate-spin"
-            src="src/assets/refresh.svg"
+            src="public/assets/refresh.svg"
             alt="loader"
           />
         </div>
@@ -55,7 +55,7 @@ export const Matches: FC = () => {
         <div className="flex items-center font-medium text-[18px] leading-22 gap-x-12">
           {error && (
             <div className="flex justify-center items-center gap-x-10 bg-grey-600 py-16 px-24 rounded-4">
-              <img src="src/assets/alert-triangle.svg" alt="alert" />
+              <img src="public/assets/alert-triangle.svg" alt="alert" />
               <p>Ошибка: не удалось загрузить информацию</p>
             </div>
           )}
@@ -67,7 +67,7 @@ export const Matches: FC = () => {
             Обновить
             <img
               className={classNames("group-disabled:fill-[#787878]", { "animate-spin": isRefreshing })}
-              src="src/assets/refresh.svg"
+              src="public/assets/refresh.svg"
               alt="refresh"
             />
           </button>
