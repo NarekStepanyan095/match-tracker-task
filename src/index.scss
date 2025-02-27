@@ -1,0 +1,42 @@
+@use "tailwindcss";
+
+@theme {
+  --color-primary-500: #EB0237;
+  --color-primary-600: #A01131;
+  --color-primary-700: #701328;
+
+  --color-success-500: #43AD28;
+
+  --color-warning-500: #EB6402;
+
+  --color-grey-500: #0B0E12;
+  --color-grey-600: #0F1318;
+  --color-black: #090909;
+  --color-white: #FFFFFF;
+
+  --radius-2: 2px;
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-cirlce: 50%;
+
+  --text-xs: 10px;
+  --text-xs--line-height: 16px;
+  --text-sm: 12px;
+  --text-sm--line-height: 20px;
+  --text-base: 14px;
+  --text-base--line-height: 22px;
+  --text-lg: 16px;
+  --text-lg--line-height: 24px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+
+  --spacing: 1px
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: theme("colors.black");
+}
